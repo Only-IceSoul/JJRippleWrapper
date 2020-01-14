@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".MainActivity">
+
+
+    <com.jjlf.jjkit_ripplewrapper.JJRippleWrapper
+        android:id="@+id/ripple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+         app:clCenterInParent="true"
+        android:padding="20dp"
+
+        android:background="@android:color/holo_green_dark"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:background="@android:color/holo_blue_dark"
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:gravity="center"
+            />
+
+    </com.jjlf.jjkit_ripplewrapper.JJRippleWrapper>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

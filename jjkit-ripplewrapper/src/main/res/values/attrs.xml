@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="JJRippleWrapper">
+
+        <attr name="rw_alpha" format="integer" />
+        <attr name="rw_frameRate" format="integer"/>
+        <attr name="rw_rippleDuration" format="integer"/>
+
+        <attr name="rw_color" format="color" />
+        <attr name="rw_centered" format="boolean" />
+        <attr name="rw_type" format="enum">
+            <enum name="simpleRipple" value="0"/>
+            <enum name="doubleRipple" value="1"/>
+        </attr>
+        <attr name="rw_zoom" format="boolean" />
+        <attr name="rw_zoomScale" format="float" />
+        <attr name="rw_zoomDuration" format="integer" />
+
+        <attr name="rw_maxRadius" format="dimension"/>
+        <attr name="rw_maxRadiusResponsive" format="reference" />
+        <attr name="rw_maxRadiusPercentScHeight" format="float" />
+        <attr name="rw_maxRadiusPercentScWidth" format="float" />
+
+        <attr name="layout_ignoreCl" format="boolean" />
+        <attr name="lpPaddingPercentScHeight" format="float"/>
+        <attr name="lpPaddingPercentScWidth" format="float"/>
+        <attr name="lpPaddingResponsive" format="reference"/>
+        <attr name="lpPaddingResPerScHeight" format="reference"/>
+        <attr name="lpPaddingResPerScWidth" format="reference"/>
+
+        <attr name="lpPaddingVerticalPerScHeight" format="float"/>
+        <attr name="lpPaddingVerticalPerScWidth" format="float"/>
+        <attr name="lpPaddingVerticalResponsive" format="reference"/>
+        <attr name="lpPaddingVerticalResPerScHeight" format="reference"/>
+        <attr name="lpPaddingVerticalResPerScWidth" format="reference"/>
+
+        <attr name="lpPaddingHorizontalPerScHeight" format="float"/>
+        <attr name="lpPaddingHorizontalPerScWidth" format="float"/>
+        <attr name="lpPaddingHorizontalResponsive" format="reference"/>
+        <attr name="lpPaddingHorizontalResPerScHeight" format="reference"/>
+        <attr name="lpPaddingHorizontalResPerScWidth" format="reference"/>
+
+
+        <attr name="lpPaddingTopPerScHeight" format="float" />
+        <attr name="lpPaddingLeftPerScHeight" format="float" />
+        <attr name="lpPaddingRightPerScHeight" format="float" />
+        <attr name="lpPaddingBottomPerScHeight" format="float" />
+
+        <attr name="lpPaddingTopPerScWidth" format="float" />
+        <attr name="lpPaddingLeftPerScWidth" format="float" />
+        <attr name="lpPaddingRightPerScWidth" format="float" />
+        <attr name="lpPaddingBottomPerScWidth" format="float" />
+
+        <attr name="lpPaddingTopResponsive" format="reference"/>
+        <attr name="lpPaddingLeftResponsive" format="reference"/>
+        <attr name="lpPaddingRightResponsive" format="reference"/>
+        <attr name="lpPaddingBottomResponsive" format="reference"/>
+
+        <attr name="lpPaddingTopResPerScWidth" format="reference"/>
+        <attr name="lpPaddingLeftResPerScWidth" format="reference"/>
+        <attr name="lpPaddingRightResPerScWidth" format="reference"/>
+        <attr name="lpPaddingBottomResPerScWidth" format="reference"/>
+
+        <attr name="lpPaddingTopResPerScHeight" format="reference"/>
+        <attr name="lpPaddingLeftResPerScHeight" format="reference"/>
+        <attr name="lpPaddingRightResPerScHeight" format="reference"/>
+        <attr name="lpPaddingBottomResPerScHeight" format="reference"/>
+
+
+        <attr name="lpMarginPercentScHeight" format="float"/>
+        <attr name="lpMarginPercentScWidth" format="float"/>
+        <attr name="lpMarginResponsive" format="reference"/>
+        <attr name="lpMarginResPerScHeight" format="reference"/>
+        <attr name="lpMarginResPerScWidth" format="reference"/>
+
+        <attr name="lpMarginVerticalPerScHeight" format="float"/>
+        <attr name="lpMarginVerticalPerScWidth" format="float"/>
+        <attr name="lpMarginVerticalResponsive" format="reference"/>
+        <attr name="lpMarginVerticalResPerScHeight" format="reference"/>
+        <attr name="lpMarginVerticalResPerScWidth" format="reference"/>
+
+        <attr name="lpMarginHorizontalPerScHeight" format="float"/>
+        <attr name="lpMarginHorizontalPerScWidth" format="float"/>
+        <attr name="lpMarginHorizontalResponsive" format="reference"/>
+        <attr name="lpMarginHorizontalResPerScHeight" format="reference"/>
+        <attr name="lpMarginHorizontalResPerScWidth" format="reference"/>
+
+
+        <attr name="lpMarginTopPerScHeight" format="float" />
+        <attr name="lpMarginLeftPerScHeight" format="float" />
+        <attr name="lpMarginRightPerScHeight" format="float" />
+        <attr name="lpMarginBottomPerScHeight" format="float" />
+
+        <attr name="lpMarginTopPerScWidth" format="float" />
+        <attr name="lpMarginLeftPerScWidth" format="float" />
+        <attr name="lpMarginRightPerScWidth" format="float" />
+        <attr name="lpMarginBottomPerScWidth" format="float" />
+
+        <attr name="lpMarginTopResponsive" format="reference"/>
+        <attr name="lpMarginLeftResponsive" format="reference"/>
+        <attr name="lpMarginRightResponsive" format="reference"/>
+        <attr name="lpMarginBottomResponsive" format="reference"/>
+
+        <attr name="lpMarginTopResPerScWidth" format="reference"/>
+        <attr name="lpMarginLeftResPerScWidth" format="reference"/>
+        <attr name="lpMarginRightResPerScWidth" format="reference"/>
+        <attr name="lpMarginBottomResPerScWidth" format="reference"/>
+
+        <attr name="lpMarginTopResPerScHeight" format="reference"/>
+        <attr name="lpMarginLeftResPerScHeight" format="reference"/>
+        <attr name="lpMarginRightResPerScHeight" format="reference"/>
+        <attr name="lpMarginBottomResPerScHeight" format="reference"/>
+
+        <attr name="lpHeightPercentScreenHeight" format="float" />
+        <attr name="lpHeightPercentScreenWidth" format="float" />
+        <attr name="lpWidthPercentScreenWidth" format="float" />
+        <attr name="lpWidthPercentScreenHeight" format="float" />
+
+        <attr name="lpHeightResponsive" format="reference"/>
+        <attr name="lpWidthResponsive" format="reference"/>
+
+        <attr name="lpHeightResponsivePercentScreenHeight" format="reference"/>
+        <attr name="lpWidthResponsivePercentScreenWidth" format="reference"/>
+        <attr name="lpHeightResponsivePercentScreenWidth" format="reference"/>
+        <attr name="lpWidthResponsivePercentScreenHeight" format="reference"/>
+
+
+        <attr name="clHeightPercent" format="float" />
+        <attr name="clHeightPercentScreenHeight" format="float" />
+        <attr name="clHeightPercentScreenWidth" format="float" />
+        <attr name="clWidthPercent" format="float" />
+        <attr name="clWidthPercentScreenWidth" format="float" />
+        <attr name="clWidthPercentScreenHeight" format="float" />
+
+        <attr name="clFillParent" format="boolean" />
+        <attr name="clFillParentHorizontally" format="boolean" />
+        <attr name="clFillParentVertically" format="boolean" />
+
+        <attr name="clCenterInParent" format="boolean" />
+        <attr name="clCenterInParentVertically" format="boolean" />
+        <attr name="clCenterInParentTopVertically" format="boolean" />
+        <attr name="clCenterInParentBottomVertically" format="boolean" />
+        <attr name="clCenterInParentHorizontally" format="boolean" />
+        <attr name="clCenterInParentStartHorizontally" format="boolean" />
+        <attr name="clCenterInParentEndHorizontally" format="boolean" />
+
+        <attr name="clCenterVerticallyOf" format="reference" />
+        <attr name="clCenterHorizontallyOf" format="reference" />
+        <attr name="clCenterInTopVerticallyOf" format="reference" />
+        <attr name="clCenterInBottomVerticallyOf" format="reference" />
+        <attr name="clCenterInStartHorizontallyOf" format="reference" />
+        <attr name="clCenterInEndHorizontallyOf" format="reference" />
+
+
+        <attr name="clMarginEnd" format="dimension" />
+        <attr name="clMarginStart" format="dimension" />
+        <attr name="clMarginBottom" format="dimension" />
+        <attr name="clMarginTop" format="dimension" />
+        <attr name="clMarginEndPercentScreenHeight" format="float" />
+        <attr name="clMarginStartPercentScreenHeight" format="float" />
+        <attr name="clMarginBottomPercentScreenHeight" format="float" />
+        <attr name="clMarginTopPercentScreenHeight" format="float" />
+        <attr name="clMarginEndPercentScreenWidth" format="float" />
+        <attr name="clMarginStartPercentScreenWidth" format="float" />
+        <attr name="clMarginBottomPercentScreenWidth" format="float" />
+        <attr name="clMarginTopPercentScreenWidth" format="float" />
+
+        <attr name="clMargin" format="dimension"  />
+        <attr name="clMarginPerScHeight" format="float" />
+        <attr name="clMarginPerScWidth" format="float" />
+        <attr name="clMarginResponsive" format="reference"  />
+        <attr name="clMarginResPerScHeight" format="reference" />
+        <attr name="clMarginResPerScWidth"  format="reference"/>
+
+        <attr name="clMarginVertical" format="dimension"  />
+        <attr name="clMarginHorizontal" format="dimension"  />
+        <attr name="clMarginHorizontalPerScHeight" format="float"  />
+        <attr name="clMarginVerticalPerScHeight" format="float"  />
+        <attr name="clMarginHorizontalPerScWidth" format="float"  />
+        <attr name="clMarginVerticalPerScWidth" format="float"  />
+        <attr name="clMarginVerticalResponsive" format="reference"  />
+        <attr name="clMarginHorizontalResponsive" format="reference"  />
+        <attr name="clMarginVerticalResPerScHeight" format="reference"  />
+        <attr name="clMarginHorizontalResPerScHeight" format="reference"  />
+        <attr name="clMarginVerticalResPerScWidth" format="reference"  />
+        <attr name="clMarginHorizontalResPerScWidth" format="reference"  />
+
+
+        <attr name="clMarginEndResponsive" format="reference" />
+        <attr name="clMarginStartResponsive" format="reference" />
+        <attr name="clMarginBottomResponsive" format="reference" />
+        <attr name="clMarginTopResponsive" format="reference" />
+        <attr name="clMarginEndResPerScHeight" format="reference"   />
+        <attr name="clMarginStartResPerScHeight" format="reference"  />
+        <attr name="clMarginBottomResPerScHeight" format="reference"  />
+        <attr name="clMarginTopResPerScHeight" format="reference"   />
+        <attr name="clMarginEndResPerScWidth" format="reference"   />
+        <attr name="clMarginStartResPerScWidth" format="reference"  />
+        <attr name="clMarginBottomResPerScWidth" format="reference"  />
+        <attr name="clMarginTopResPerScWidth" format="reference"   />
+
+        <attr name="clVerticalBias" format="float" />
+        <attr name="clHorizontalBias" format="float" />
+
+        <attr name="clStartToStartParent" format="boolean" />
+        <attr name="clStartToEndParent" format="boolean" />
+        <attr name="clEndToEndParent" format="boolean" />
+        <attr name="clEndToStartParent" format="boolean" />
+        <attr name="clTopToTopParent" format="boolean" />
+        <attr name="clTopToBottomParent" format="boolean" />
+        <attr name="clBottomToBottomParent" format="boolean" />
+        <attr name="clBottomToTopParent" format="boolean" />
+        <attr name="clStartToStartOf" format="reference" />
+        <attr name="clStartToEndOf" format="reference" />
+        <attr name="clEndToEndOf" format="reference" />
+        <attr name="clEndToStartOf" format="reference" />
+        <attr name="clTopToTopOf" format="reference" />
+        <attr name="clTopToBottomOf" format="reference" />
+        <attr name="clBottomToBottomOf" format="reference" />
+        <attr name="clBottomToTopOf" format="reference" />
+
+        <attr name="clHeightResponsive" format="reference"/>
+        <attr name="clWidthResponsive" format="reference"/>
+
+        <attr name="clHeightResponsivePercentScreenHeight" format="reference"/>
+        <attr name="clWidthResponsivePercentScreenWidth" format="reference"/>
+        <attr name="clHeightResponsivePercentScreenWidth" format="reference"/>
+        <attr name="clWidthResponsivePercentScreenHeight" format="reference"/>
+
+
+        <!--        start land scape-->
+
+        <attr name="support_configuration_changed" format="boolean" />
+
+        <attr name="support_landscape" format="boolean" />
+
+        <attr name="layout_height_landscape" format="dimension" >
+            <enum name="match_parent" value="-1" />
+            <!-- The view should be only big enough to enclose its content (plus padding). -->
+            <enum name="wrap_content" value="-2" />
+        </attr>
+        <attr name="layout_width_landscape" format="dimension">
+            <enum name="match_parent" value="-1" />
+            <!-- The view should be only big enough to enclose its content (plus padding). -->
+            <enum name="wrap_content" value="-2" />
+        </attr>
+
+        <attr name="lplPadding" format="dimension" />
+        <attr name="lplPaddingVertical" format="dimension" />
+        <attr name="lplPaddingHorizontal" format="dimension" />
+        <attr name="lplPaddingStart" format="dimension" />
+        <attr name="lplPaddingTop" format="dimension" />
+        <attr name="lplPaddingBottom" format="dimension" />
+        <attr name="lplPaddingEnd" format="dimension" />
+
+        <attr name="lplMargin" format="dimension" />
+        <attr name="lplMarginVertical" format="dimension" />
+        <attr name="lplMarginHorizontal" format="dimension" />
+        <attr name="lplMarginStart" format="dimension" />
+        <attr name="lplMarginTop" format="dimension" />
+        <attr name="lplMarginBottom" format="dimension" />
+        <attr name="lplMarginEnd" format="dimension" />
+
+
+        <attr name="lplPaddingPercentScHeight" format="float"/>
+        <attr name="lplPaddingPercentScWidth" format="float"/>
+        <attr name="lplPaddingResponsive" format="reference"/>
+        <attr name="lplPaddingResPerScHeight" format="reference"/>
+        <attr name="lplPaddingResPerScWidth" format="reference"/>
+
+        <attr name="lplPaddingVerticalPerScHeight" format="float"/>
+        <attr name="lplPaddingVerticalPerScWidth" format="float"/>
+        <attr name="lplPaddingVerticalResponsive" format="reference"/>
+        <attr name="lplPaddingVerticalResPerScHeight" format="reference"/>
+        <attr name="lplPaddingVerticalResPerScWidth" format="reference"/>
+
+        <attr name="lplPaddingHorizontalPerScHeight" format="float"/>
+        <attr name="lplPaddingHorizontalPerScWidth" format="float"/>
+        <attr name="lplPaddingHorizontalResponsive" format="reference"/>
+        <attr name="lplPaddingHorizontalResPerScHeight" format="reference"/>
+        <attr name="lplPaddingHorizontalResPerScWidth" format="reference"/>
+
+
+        <attr name="lplPaddingTopPerScHeight" format="float" />
+        <attr name="lplPaddingLeftPerScHeight" format="float" />
+        <attr name="lplPaddingRightPerScHeight" format="float" />
+        <attr name="lplPaddingBottomPerScHeight" format="float" />
+
+        <attr name="lplPaddingTopPerScWidth" format="float" />
+        <attr name="lplPaddingLeftPerScWidth" format="float" />
+        <attr name="lplPaddingRightPerScWidth" format="float" />
+        <attr name="lplPaddingBottomPerScWidth" format="float" />
+
+        <attr name="lplPaddingTopResponsive" format="reference"/>
+        <attr name="lplPaddingLeftResponsive" format="reference"/>
+        <attr name="lplPaddingRightResponsive" format="reference"/>
+        <attr name="lplPaddingBottomResponsive" format="reference"/>
+
+        <attr name="lplPaddingTopResPerScWidth" format="reference"/>
+        <attr name="lplPaddingLeftResPerScWidth" format="reference"/>
+        <attr name="lplPaddingRightResPerScWidth" format="reference"/>
+        <attr name="lplPaddingBottomResPerScWidth" format="reference"/>
+
+        <attr name="lplPaddingTopResPerScHeight" format="reference"/>
+        <attr name="lplPaddingLeftResPerScHeight" format="reference"/>
+        <attr name="lplPaddingRightResPerScHeight" format="reference"/>
+        <attr name="lplPaddingBottomResPerScHeight" format="reference"/>
+
+
+        <attr name="lplMarginPercentScHeight" format="float"/>
+        <attr name="lplMarginPercentScWidth" format="float"/>
+        <attr name="lplMarginResponsive" format="reference"/>
+        <attr name="lplMarginResPerScHeight" format="reference"/>
+        <attr name="lplMarginResPerScWidth" format="reference"/>
+
+        <attr name="lplMarginVerticalPerScHeight" format="float"/>
+        <attr name="lplMarginVerticalPerScWidth" format="float"/>
+        <attr name="lplMarginVerticalResponsive" format="reference"/>
+        <attr name="lplMarginVerticalResPerScHeight" format="reference"/>
+        <attr name="lplMarginVerticalResPerScWidth" format="reference"/>
+
+        <attr name="lplMarginHorizontalPerScHeight" format="float"/>
+        <attr name="lplMarginHorizontalPerScWidth" format="float"/>
+        <attr name="lplMarginHorizontalResponsive" format="reference"/>
+        <attr name="lplMarginHorizontalResPerScHeight" format="reference"/>
+        <attr name="lplMarginHorizontalResPerScWidth" format="reference"/>
+
+
+        <attr name="lplMarginTopPerScHeight" format="float" />
+        <attr name="lplMarginLeftPerScHeight" format="float" />
+        <attr name="lplMarginRightPerScHeight" format="float" />
+        <attr name="lplMarginBottomPerScHeight" format="float" />
+
+        <attr name="lplMarginTopPerScWidth" format="float" />
+        <attr name="lplMarginLeftPerScWidth" format="float" />
+        <attr name="lplMarginRightPerScWidth" format="float" />
+        <attr name="lplMarginBottomPerScWidth" format="float" />
+
+        <attr name="lplMarginTopResponsive" format="reference"/>
+        <attr name="lplMarginLeftResponsive" format="reference"/>
+        <attr name="lplMarginRightResponsive" format="reference"/>
+        <attr name="lplMarginBottomResponsive" format="reference"/>
+
+        <attr name="lplMarginTopResPerScWidth" format="reference"/>
+        <attr name="lplMarginLeftResPerScWidth" format="reference"/>
+        <attr name="lplMarginRightResPerScWidth" format="reference"/>
+        <attr name="lplMarginBottomResPerScWidth" format="reference"/>
+
+        <attr name="lplMarginTopResPerScHeight" format="reference"/>
+        <attr name="lplMarginLeftResPerScHeight" format="reference"/>
+        <attr name="lplMarginRightResPerScHeight" format="reference"/>
+        <attr name="lplMarginBottomResPerScHeight" format="reference"/>
+
+        <attr name="lplHeightPercentScreenHeight" format="float" />
+        <attr name="lplHeightPercentScreenWidth" format="float" />
+        <attr name="lplWidthPercentScreenWidth" format="float" />
+        <attr name="lplWidthPercentScreenHeight" format="float" />
+
+        <attr name="lplHeightResponsive" format="reference"/>
+        <attr name="lplWidthResponsive" format="reference"/>
+
+        <attr name="lplHeightResponsivePercentScreenHeight" format="reference"/>
+        <attr name="lplWidthResponsivePercentScreenWidth" format="reference"/>
+        <attr name="lplHeightResponsivePercentScreenWidth" format="reference"/>
+        <attr name="lplWidthResponsivePercentScreenHeight" format="reference"/>
+
+
+        <attr name="cllHeightPercent" format="float" />
+        <attr name="cllHeightPercentScreenHeight" format="float" />
+        <attr name="cllHeightPercentScreenWidth" format="float" />
+        <attr name="cllWidthPercent" format="float" />
+        <attr name="cllWidthPercentScreenWidth" format="float" />
+        <attr name="cllWidthPercentScreenHeight" format="float" />
+
+        <attr name="cllFillParent" format="boolean" />
+        <attr name="cllFillParentHorizontally" format="boolean" />
+        <attr name="cllFillParentVertically" format="boolean" />
+
+        <attr name="cllCenterInParent" format="boolean" />
+        <attr name="cllCenterInParentVertically" format="boolean" />
+        <attr name="cllCenterInParentTopVertically" format="boolean" />
+        <attr name="cllCenterInParentBottomVertically" format="boolean" />
+        <attr name="cllCenterInParentHorizontally" format="boolean" />
+        <attr name="cllCenterInParentStartHorizontally" format="boolean" />
+        <attr name="cllCenterInParentEndHorizontally" format="boolean" />
+
+        <attr name="cllCenterVerticallyOf" format="reference" />
+        <attr name="cllCenterHorizontallyOf" format="reference" />
+        <attr name="cllCenterInTopVerticallyOf" format="reference" />
+        <attr name="cllCenterInBottomVerticallyOf" format="reference" />
+        <attr name="cllCenterInStartHorizontallyOf" format="reference" />
+        <attr name="cllCenterInEndHorizontallyOf" format="reference" />
+
+
+        <attr name="cllMarginEnd" format="dimension" />
+        <attr name="cllMarginStart" format="dimension" />
+        <attr name="cllMarginBottom" format="dimension" />
+        <attr name="cllMarginTop" format="dimension" />
+        <attr name="cllMarginEndPercentScreenHeight" format="float" />
+        <attr name="cllMarginStartPercentScreenHeight" format="float" />
+        <attr name="cllMarginBottomPercentScreenHeight" format="float" />
+        <attr name="cllMarginTopPercentScreenHeight" format="float" />
+        <attr name="cllMarginEndPercentScreenWidth" format="float" />
+        <attr name="cllMarginStartPercentScreenWidth" format="float" />
+        <attr name="cllMarginBottomPercentScreenWidth" format="float" />
+        <attr name="cllMarginTopPercentScreenWidth" format="float" />
+
+        <attr name="cllMargin" format="dimension"  />
+        <attr name="cllMarginPerScHeight" format="float" />
+        <attr name="cllMarginPerScWidth" format="float" />
+        <attr name="cllMarginResponsive" format="reference"  />
+        <attr name="cllMarginResPerScHeight" format="reference" />
+        <attr name="cllMarginResPerScWidth"  format="reference"/>
+
+        <attr name="cllMarginVertical" format="dimension"  />
+        <attr name="cllMarginHorizontal" format="dimension"  />
+        <attr name="cllMarginHorizontalPerScHeight" format="float"  />
+        <attr name="cllMarginVerticalPerScHeight" format="float"  />
+        <attr name="cllMarginHorizontalPerScWidth" format="float"  />
+        <attr name="cllMarginVerticalPerScWidth" format="float"  />
+        <attr name="cllMarginVerticalResponsive" format="reference"  />
+        <attr name="cllMarginHorizontalResponsive" format="reference"  />
+        <attr name="cllMarginVerticalResPerScHeight" format="reference"  />
+        <attr name="cllMarginHorizontalResPerScHeight" format="reference"  />
+        <attr name="cllMarginVerticalResPerScWidth" format="reference"  />
+        <attr name="cllMarginHorizontalResPerScWidth" format="reference"  />
+
+
+        <attr name="cllMarginEndResponsive" format="reference" />
+        <attr name="cllMarginStartResponsive" format="reference" />
+        <attr name="cllMarginBottomResponsive" format="reference" />
+        <attr name="cllMarginTopResponsive" format="reference" />
+        <attr name="cllMarginEndResPerScHeight" format="reference"   />
+        <attr name="cllMarginStartResPerScHeight" format="reference"  />
+        <attr name="cllMarginBottomResPerScHeight" format="reference"  />
+        <attr name="cllMarginTopResPerScHeight" format="reference"   />
+        <attr name="cllMarginEndResPerScWidth" format="reference"   />
+        <attr name="cllMarginStartResPerScWidth" format="reference"  />
+        <attr name="cllMarginBottomResPerScWidth" format="reference"  />
+        <attr name="cllMarginTopResPerScWidth" format="reference"   />
+
+        <attr name="cllVerticalBias" format="float" />
+        <attr name="cllHorizontalBias" format="float" />
+
+        <attr name="cllStartToStartParent" format="boolean" />
+        <attr name="cllStartToEndParent" format="boolean" />
+        <attr name="cllEndToEndParent" format="boolean" />
+        <attr name="cllEndToStartParent" format="boolean" />
+        <attr name="cllTopToTopParent" format="boolean" />
+        <attr name="cllTopToBottomParent" format="boolean" />
+        <attr name="cllBottomToBottomParent" format="boolean" />
+        <attr name="cllBottomToTopParent" format="boolean" />
+        <attr name="cllStartToStartOf" format="reference" />
+        <attr name="cllStartToEndOf" format="reference" />
+        <attr name="cllEndToEndOf" format="reference" />
+        <attr name="cllEndToStartOf" format="reference" />
+        <attr name="cllTopToTopOf" format="reference" />
+        <attr name="cllTopToBottomOf" format="reference" />
+        <attr name="cllBottomToBottomOf" format="reference" />
+        <attr name="cllBottomToTopOf" format="reference" />
+
+        <attr name="cllHeightResponsive" format="reference"/>
+        <attr name="cllWidthResponsive" format="reference"/>
+
+        <attr name="cllHeightResponsivePercentScreenHeight" format="reference"/>
+        <attr name="cllWidthResponsivePercentScreenWidth" format="reference"/>
+        <attr name="cllHeightResponsivePercentScreenWidth" format="reference"/>
+        <attr name="cllWidthResponsivePercentScreenHeight" format="reference"/>
+
+
+    </declare-styleable>
+
+
+
+</resources>

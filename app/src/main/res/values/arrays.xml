@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="radius" >
+        <item>15dp</item>
+        <item>14dp</item>
+        <item>13dp</item>
+        <item>12dp</item>
+    </array>
+</resources>

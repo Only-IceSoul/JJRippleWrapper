@@ -1,0 +1,2 @@
+include ':app', ':jjkit-ripplewrapper'
+rootProject.name='SampleRippleWrapper'
